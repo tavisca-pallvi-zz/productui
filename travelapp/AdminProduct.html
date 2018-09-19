@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+     <link rel="stylesheet" href="Style.css">
+    <script src="mainjs.js"></script>
+    <title></title>
+</head>
+<body>
+    <p id="y">
+    </p>
+                    <button onclick="displays(event,'air-form')">Air </button>
+
+                    <button onclick="displays(event,'hotel-form')">Hotel </button>
+
+                    <button onclick="displays(event,'activity-form')">Activity</button>
+                    <button onclick="displays(event,'car-form')">Car</button>
+    <div class="products" id="air-form">
+    <form id="air" >
+      <label>
+            Source
+        </label>
+        <input type="text" name="Name">
+        <label>
+              Destination
+        </label>
+        <input type="text" name="Id">
+        <label>
+          ArrivalTime
+        </label>
+        <input type="text" name="Book">
+        <label>s
+            DepartureTime
+        </label>
+        <input type="text" name="SaveProduct">
+        <label>
+            Price
+        </label>
+        <input type="text" name="Source">
+        <label>
+           Book
+        </label>
+        <input type="text" name="Destination">
+        <label>
+            Save
+        </label>
+        <input type="text" name="ArrivalTime">
+        <label>
+            Save
+        </label>
+        <input type="text" name="DepartureTime">
+        <label>
+            Save
+        </label>
+        <input type="text" name="ArrivalTime">
+    </form>
+    <button onclick="PostDetails('Air','air')"></button>
+    </div>
+
+    <div class="products" id="car-form"> 
+    <form id="car">
+        <label>
+            Id
+        </label>
+
+        <input type="text" name="Id" value="Id">
+ <label>
+            Name
+        </label>
+
+        <input type="text" name="Name">
+
+<label>
+            Brand
+        </label>
+        <input type="text" name="Brand">
+        <label>
+            Model
+                    </label>
+
+        <input type="text" name="Model">
+        <label>
+            RegState
+        </label>
+
+        <input type="text" name="RegState">
+<label>
+          Average
+        </label>
+
+        <input type="text" name="Average">
+        <label>
+        FuelType
+        </label>
+
+        <input type="text" name="FuelType">
+<label>
+            GearType
+        </label>
+
+      <input type="text" name="GearType">
+    </form>
+
+    <button onclick="PostDetails('Car','car')"></button>
+     </div>
+
+  <div class="products" id="activity-form">
+    <form id="activity">
+          <label>
+            TypeActivity
+        </label>
+
+        <input type="text" name="TypeActivity">
+        <br><br>
+          <label>
+            Location
+        </label>
+        <input type="text" name="Location">
+         <label>
+            Id
+        </label>
+        <input type="text" name="Id">
+          <label>
+            Fare
+        </label>
+        <input type="text" name="Fare">
+          <label>
+         NoOfPeople
+        </label>
+        <input type="text" name="NoOfPeople">
+          <label>
+            Duration
+        </label>
+        <input type="text" name="Duration">
+          <label>
+            Book
+        </label>
+        <input type="text" name="Book">
+          <label>
+            SaveProduct
+        </label>
+        <input type="text" name="SaveProduct">
+    </form>
+    <button onclick="PostDetails('Activity','activity')"></button>
+      </div>
+
+  <div class="products" id="hotel-form">
+    <form id="hotel">
+        <label>
+            Id
+        </label>
+
+        <input type="text" name="Id" value="Id">
+         <label>
+            Name
+        </label>
+
+        <input type="text" name="Name" value="Name">
+        <br><br>
+        <label>
+            Location
+        </label>
+
+        <input type="text" name="Location">
+        <label>
+            Price
+        </label>
+
+        <input type="text" name="Price">
+        <label>
+            Rating
+        </label>
+
+        <input type="text" name="Rating">
+       
+        <label>
+            Wifi
+        </label>
+
+        <input type="text" name="WifiAvailaible">
+        <label>
+        noofrooms
+        </label>
+
+        <input type="text" name="NoOfRooms">
+        <label>
+            save
+        </label>
+
+        <input type="text" name="SaveProduct">
+            <label>
+            book
+        </label>
+
+        <input type="text" name="Book">
+
+
+    </form>
+    <button onclick="PostDetails('Hotel','hotel')"></button>
+</div>
+
+</body>
+</html>
